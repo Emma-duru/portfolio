@@ -12,13 +12,30 @@ body {
     color: #9933CC;
     bottom: 55px;
     right: 40px;
+    z-index: 555;
 }
 
 .return:hover {
     color: #9933CC;
 }
 
+h1 {
+    font-size: 3.5em;
+}
+
+p {
+    font-size: 1em;
+}
+
+.section-title {
+    font-size: 3em;
+}
+
+
 /* Home Section */
+nav {
+    width: 100%;
+}
 .navbar {
     position: fixed;
     top: 0;
@@ -62,7 +79,7 @@ body {
     border-radius: 0;
 }
 
-/* Section HR */
+/* HR */
 .section-hr {
     width: 5%;
     margin: auto;
@@ -70,6 +87,12 @@ body {
     border-bottom: 0;
 }
 
+.title-hr {
+    width: 5%;
+    min-width: 80px;
+    margin: 0 auto 3%;
+    border: 3px solid #9933CC;
+}
 
 /* Skills Section */
 .section {
@@ -123,10 +146,10 @@ body {
     height: 100%;
     transition: transform 2s ease;
 }
-/* 
-.project-img:hover {
-    transform: scale(1.05);
-} */
+
+.projects, .contact-form {
+    margin-top: 40px;
+}
 
 .project-container:hover .project-img {
     transform: scale(1.04);
@@ -170,6 +193,9 @@ body {
     padding: 15px 20px;
 }
 
+
+/* Footer Styling */
+
 footer {
     background-color: #0a0a0a;
 }
@@ -177,4 +203,26 @@ footer {
 .copyright-text {
     margin: 0;
     padding: 20px;
+}
+
+.footer-contact {
+    width: 50%;
+    min-width: 300px;
+    margin: auto;
+}
+
+/* Media Query */
+@media (max-width: 705px) {
+    body {
+        font-size: 13px;
+    }
+
+    .return {
+        display: none;
+    }
+
+    .showcase {
+        max-width: 70%;
+        margin: auto;
+    }
 }
