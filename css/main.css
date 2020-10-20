@@ -1,0 +1,180 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 16px;
+}
+
+.return {
+    position: fixed;
+    font-size: 2.5em;
+    color: #9933CC;
+    bottom: 55px;
+    right: 40px;
+}
+
+.return:hover {
+    color: #9933CC;
+}
+
+/* Home Section */
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    padding: 10px 30px;
+}
+
+.navbar-brand {
+    font-size: 1.8em;
+}
+
+.toggler {
+    color: white;
+    font-size: 1.5em;
+    border: 0;
+}
+
+.nav-link {
+    font-size: 1.3em;
+    color: #afaaaa;
+}
+
+.active {
+    color: #ffffff;
+}
+
+.nav-link:hover {
+    color: #9933CC;
+}
+
+.showcase {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    font-size: 1.2em;
+    border-radius: 0;
+}
+
+/* Section HR */
+.section-hr {
+    width: 5%;
+    margin: auto;
+    border: dotted 6px #bb8ad3;
+    border-bottom: 0;
+}
+
+
+/* Skills Section */
+.section {
+    padding: 10% 7%;
+}
+
+.skill-item {
+    text-align: center;
+    padding: 10% 0;
+    background-color: #0a0a0a;
+    margin-top: 25px;
+}
+
+.skill-title {
+    font-size: 1.5em;
+}
+
+.skill-icon {
+    font-size: 5em;
+}
+
+.html-icon {
+    color: #E96228;
+}
+
+.css-icon {
+    color: #3595CF;
+}
+
+.bs-icon {
+    color:  #533B78;
+}
+
+.js-icon {
+    color: #EFD81D;
+}
+
+
+/* Projects Section */
+.project-container {
+    margin: 0;
+    padding: 0;
+    height: 220px;
+    border: 4px solid #060606;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    transition: transform 2s ease;
+}
+/* 
+.project-img:hover {
+    transform: scale(1.05);
+} */
+
+.project-container:hover .project-img {
+    transform: scale(1.04);
+    transform-origin: 50% 50%;
+    opacity: 0.2;
+}
+
+.project-img-content {
+    transition: .5s ease;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 444;
+    top: 30%;
+    padding: 1em;
+}
+
+.project-img-text {
+    font-weight: bolder;
+    font-size: 1.5em;
+    color: white;
+}
+
+.project-container:hover .project-img-content {
+    opacity: 1;
+}
+
+
+/* Contact Section */
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.form-control {
+    margin: 7px auto;
+    background-color: #0A0A0A;
+    border-radius: 0;
+    border: 0;
+    padding: 15px 20px;
+}
+
+footer {
+    background-color: #0a0a0a;
+}
+
+.copyright-text {
+    margin: 0;
+    padding: 20px;
+}
